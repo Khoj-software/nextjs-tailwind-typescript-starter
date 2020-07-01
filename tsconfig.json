@@ -19,5 +19,6 @@
     "target": "esnext"
   },
   "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx", "twin.d.ts", "next-env.d.ts" ]
+  "include": ["**/*.ts", "**/*.tsx", "twin.d.ts", "next-env.d.ts" ],
+  "plugins": [{ "name": "typescript-plugin-tw-template" }]
 }

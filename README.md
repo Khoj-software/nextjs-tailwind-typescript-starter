@@ -9,6 +9,7 @@ next.js template including tailwindcss with typescript
 - now uses tailwindcss 1.4.x purge method on production builds
 - uses styled-components with twin.macros to play well with tailwindcss
 - stylelint for linting CSS
+- typescript-plugin-tw-template for editor support of tailwind classes
 
 ## usage
 
