@@ -1,18 +1,12 @@
 import React from 'react'
-
-export default function jsxExample(): React.ReactElement {
+import tw from 'twin.macro'
+export default function jsxExample(): React.FunctionComponentElement<void> {
+    const CustomBtn = tw.button`text-white font-bold py-2 px-4 rounded`
     return (
-        <>
-            <section>
-                <button className="bg-red-500 custom-btn">Button 1</button>
-                <button className="bg-red-600 custom-btn">Button 2</button>
-                <button className="bg-red-700 custom-btn">Button 2</button>
-            </section>
-            <style jsx>{`
-                .custom-btn {
-                    @apply text-white font-bold py-2 px-4 rounded;
-                }
-            `}</style>
-        </>
+        <section>
+            <CustomBtn tw="bg-red-500 ">Button 1</CustomBtn>
+            <CustomBtn tw="bg-red-600 ">Button 2</CustomBtn>
+            <CustomBtn tw="bg-red-700 ">Button 2</CustomBtn>
+        </section>
     )
 }

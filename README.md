@@ -7,7 +7,7 @@ next.js template including tailwindcss with typescript
 - Includes Tailwindcss
 - Includes postcss-preset-env
 - now uses tailwindcss 1.4.x purge method on production builds
-- allow to use @apply directive in styled-jsx tags
+- uses styled-components with twin.macros to play well with tailwindcss
 - stylelint for linting CSS
 
 ## usage
